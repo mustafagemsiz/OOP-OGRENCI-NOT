@@ -4,6 +4,57 @@
     "D:\\vs Projeleri\\OgrenciNot\\OgrenciNot\\OgrenciNot.csproj": {}
   },
   "projects": {
+    "D:\\vs Projeleri\\OgrenciNot\\BUSINESSLOGICLAYER\\BUSINESSLOGICLAYER.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\vs Projeleri\\OgrenciNot\\BUSINESSLOGICLAYER\\BUSINESSLOGICLAYER.csproj",
+        "projectName": "BUSINESSLOGICLAYER",
+        "projectPath": "D:\\vs Projeleri\\OgrenciNot\\BUSINESSLOGICLAYER\\BUSINESSLOGICLAYER.csproj",
+        "frameworks": {
+          "net45": {
+            "projectReferences": {
+              "D:\\vs Projeleri\\OgrenciNot\\ENTITYLAYER\\ENTITYLAYER.csproj": {
+                "projectPath": "D:\\vs Projeleri\\OgrenciNot\\ENTITYLAYER\\ENTITYLAYER.csproj"
+              },
+              "D:\\vs Projeleri\\OgrenciNot\\FACADELAYER\\FACADELAYER.csproj": {
+                "projectPath": "D:\\vs Projeleri\\OgrenciNot\\FACADELAYER\\FACADELAYER.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    },
+    "D:\\vs Projeleri\\OgrenciNot\\ENTITYLAYER\\ENTITYLAYER.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\vs Projeleri\\OgrenciNot\\ENTITYLAYER\\ENTITYLAYER.csproj",
+        "projectName": "ENTITYLAYER",
+        "projectPath": "D:\\vs Projeleri\\OgrenciNot\\ENTITYLAYER\\ENTITYLAYER.csproj"
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    },
+    "D:\\vs Projeleri\\OgrenciNot\\FACADELAYER\\FACADELAYER.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\vs Projeleri\\OgrenciNot\\FACADELAYER\\FACADELAYER.csproj",
+        "projectName": "FACADELAYER",
+        "projectPath": "D:\\vs Projeleri\\OgrenciNot\\FACADELAYER\\FACADELAYER.csproj",
+        "frameworks": {
+          "net45": {
+            "projectReferences": {
+              "D:\\vs Projeleri\\OgrenciNot\\ENTITYLAYER\\ENTITYLAYER.csproj": {
+                "projectPath": "D:\\vs Projeleri\\OgrenciNot\\ENTITYLAYER\\ENTITYLAYER.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    },
     "D:\\vs Projeleri\\OgrenciNot\\OgrenciNot\\OgrenciNot.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +82,17 @@
         "frameworks": {
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\vs Projeleri\\OgrenciNot\\BUSINESSLOGICLAYER\\BUSINESSLOGICLAYER.csproj": {
+                "projectPath": "D:\\vs Projeleri\\OgrenciNot\\BUSINESSLOGICLAYER\\BUSINESSLOGICLAYER.csproj"
+              },
+              "D:\\vs Projeleri\\OgrenciNot\\ENTITYLAYER\\ENTITYLAYER.csproj": {
+                "projectPath": "D:\\vs Projeleri\\OgrenciNot\\ENTITYLAYER\\ENTITYLAYER.csproj"
+              },
+              "D:\\vs Projeleri\\OgrenciNot\\FACADELAYER\\FACADELAYER.csproj": {
+                "projectPath": "D:\\vs Projeleri\\OgrenciNot\\FACADELAYER\\FACADELAYER.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

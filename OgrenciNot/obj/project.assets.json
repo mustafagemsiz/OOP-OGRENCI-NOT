@@ -1,11 +1,66 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "BUSINESSLOGICLAYER/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "ENTITYLAYER": "1.0.0",
+          "FACADELAYER": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BUSINESSLOGICLAYER.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BUSINESSLOGICLAYER.dll": {}
+        }
+      },
+      "ENTITYLAYER/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ENTITYLAYER.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ENTITYLAYER.dll": {}
+        }
+      },
+      "FACADELAYER/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "ENTITYLAYER": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FACADELAYER.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FACADELAYER.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BUSINESSLOGICLAYER/1.0.0": {
+      "type": "project",
+      "path": "../BUSINESSLOGICLAYER/BUSINESSLOGICLAYER.csproj",
+      "msbuildProject": "../BUSINESSLOGICLAYER/BUSINESSLOGICLAYER.csproj"
+    },
+    "ENTITYLAYER/1.0.0": {
+      "type": "project",
+      "path": "../ENTITYLAYER/ENTITYLAYER.csproj",
+      "msbuildProject": "../ENTITYLAYER/ENTITYLAYER.csproj"
+    },
+    "FACADELAYER/1.0.0": {
+      "type": "project",
+      "path": "../FACADELAYER/FACADELAYER.csproj",
+      "msbuildProject": "../FACADELAYER/FACADELAYER.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "BUSINESSLOGICLAYER >= 1.0.0",
+      "ENTITYLAYER >= 1.0.0",
+      "FACADELAYER >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\birha\\.nuget\\packages\\": {},
@@ -38,7 +93,17 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\vs Projeleri\\OgrenciNot\\BUSINESSLOGICLAYER\\BUSINESSLOGICLAYER.csproj": {
+              "projectPath": "D:\\vs Projeleri\\OgrenciNot\\BUSINESSLOGICLAYER\\BUSINESSLOGICLAYER.csproj"
+            },
+            "D:\\vs Projeleri\\OgrenciNot\\ENTITYLAYER\\ENTITYLAYER.csproj": {
+              "projectPath": "D:\\vs Projeleri\\OgrenciNot\\ENTITYLAYER\\ENTITYLAYER.csproj"
+            },
+            "D:\\vs Projeleri\\OgrenciNot\\FACADELAYER\\FACADELAYER.csproj": {
+              "projectPath": "D:\\vs Projeleri\\OgrenciNot\\FACADELAYER\\FACADELAYER.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

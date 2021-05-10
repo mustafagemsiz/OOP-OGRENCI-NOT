@@ -1,0 +1,6 @@
+D:\vs Projeleri\OgrenciNot\ENTITYLAYER\bin\Debug\ENTITYLAYER.dll
+D:\vs Projeleri\OgrenciNot\ENTITYLAYER\bin\Debug\ENTITYLAYER.pdb
+D:\vs Projeleri\OgrenciNot\ENTITYLAYER\obj\Debug\ENTITYLAYER.csproj.CoreCompileInputs.cache
+D:\vs Projeleri\OgrenciNot\ENTITYLAYER\obj\Debug\ENTITYLAYER.dll
+D:\vs Projeleri\OgrenciNot\ENTITYLAYER\obj\Debug\ENTITYLAYER.pdb
+D:\vs Projeleri\OgrenciNot\ENTITYLAYER\obj\Debug\ENTITYLAYER.csprojAssemblyReference.cache

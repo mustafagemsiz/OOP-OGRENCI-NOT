@@ -1,0 +1,65 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "OgrenciNot/1.0.0": {
+        "dependencies": {
+          "BUSINESSLOGICLAYER": "1.0.0",
+          "ENTITYLAYER": "1.0.0",
+          "FACADELAYER": "1.0.0"
+        },
+        "runtime": {
+          "OgrenciNot.dll": {}
+        }
+      },
+      "BUSINESSLOGICLAYER/1.0.0": {
+        "dependencies": {
+          "ENTITYLAYER": "1.0.0",
+          "FACADELAYER": "1.0.0"
+        },
+        "runtime": {
+          "BUSINESSLOGICLAYER.dll": {}
+        }
+      },
+      "ENTITYLAYER/1.0.0": {
+        "runtime": {
+          "ENTITYLAYER.dll": {}
+        }
+      },
+      "FACADELAYER/1.0.0": {
+        "dependencies": {
+          "ENTITYLAYER": "1.0.0"
+        },
+        "runtime": {
+          "FACADELAYER.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OgrenciNot/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BUSINESSLOGICLAYER/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ENTITYLAYER/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FACADELAYER/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

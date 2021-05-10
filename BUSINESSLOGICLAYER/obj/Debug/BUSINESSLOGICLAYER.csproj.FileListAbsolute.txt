@@ -1,0 +1,12 @@
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\bin\Debug\BUSINESSLOGICLAYER.dll
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\bin\Debug\BUSINESSLOGICLAYER.pdb
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\bin\Debug\ENTITYLAYER.dll
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\bin\Debug\FACADELAYER.dll
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\bin\Debug\ENTITYLAYER.pdb
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\bin\Debug\FACADELAYER.pdb
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\obj\Debug\BUSINESSLOGICLAYER.csprojAssemblyReference.cache
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\obj\Debug\BUSINESSLOGICLAYER.csproj.CoreCompileInputs.cache
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\obj\Debug\BUSINESSLOGICLAYER.csproj.CopyComplete
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\obj\Debug\BUSINESSLOGICLAYER.dll
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\obj\Debug\BUSINESSLOGICLAYER.pdb
+D:\vs Projeleri\OgrenciNot\BUSINESSLOGICLAYER\bin\Debug\BUSINESSLOGICLAYER.dll.config

@@ -9,7 +9,7 @@ using ENTITYLAYER;
 
 namespace FACADELAYER
 {
-    class FACADEKULUP
+    public class FACADEKULUP
     {
         public static int EKLE(ENTITYKULUP deger)
         {           

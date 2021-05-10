@@ -1,0 +1,9 @@
+D:\vs Projeleri\OgrenciNot\FACADELAYER\bin\Debug\FACADELAYER.dll
+D:\vs Projeleri\OgrenciNot\FACADELAYER\bin\Debug\FACADELAYER.pdb
+D:\vs Projeleri\OgrenciNot\FACADELAYER\bin\Debug\ENTITYLAYER.dll
+D:\vs Projeleri\OgrenciNot\FACADELAYER\bin\Debug\ENTITYLAYER.pdb
+D:\vs Projeleri\OgrenciNot\FACADELAYER\obj\Debug\FACADELAYER.csprojAssemblyReference.cache
+D:\vs Projeleri\OgrenciNot\FACADELAYER\obj\Debug\FACADELAYER.csproj.CoreCompileInputs.cache
+D:\vs Projeleri\OgrenciNot\FACADELAYER\obj\Debug\FACADELAYER.csproj.CopyComplete
+D:\vs Projeleri\OgrenciNot\FACADELAYER\obj\Debug\FACADELAYER.dll
+D:\vs Projeleri\OgrenciNot\FACADELAYER\obj\Debug\FACADELAYER.pdb
