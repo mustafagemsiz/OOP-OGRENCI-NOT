@@ -42,6 +42,7 @@ namespace FACADELAYER
             while (dr.Read())
             {
                 ENTITYNOT ent = new ENTITYNOT();
+                ent.OGRID = Convert.ToUInt16(dr["OGRID"]);
                 ent.AD = dr["AD"].ToString();
                 ent.SOYAD = dr["SOYAD"].ToString();
                 ent.SINAV1 = Convert.ToUInt16(dr["SINAV1"]);

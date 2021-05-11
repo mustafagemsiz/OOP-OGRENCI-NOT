@@ -31,18 +31,18 @@ namespace OgrenciNot
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cmbOgrKulup = new System.Windows.Forms.ComboBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.btnListele = new OgrenciNot.roundButton();
             this.btnGuncelle = new OgrenciNot.roundButton();
-            this.btnSil = new OgrenciNot.roundButton();
             this.btnKaydet = new OgrenciNot.roundButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtOgrKulup = new System.Windows.Forms.TextBox();
             this.txtOgrFotograf = new System.Windows.Forms.TextBox();
             this.txtOgrSoyad = new System.Windows.Forms.TextBox();
             this.txtOgrAd = new System.Windows.Forms.TextBox();
@@ -54,6 +54,7 @@ namespace OgrenciNot
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnNotHesapla = new OgrenciNot.roundButton();
             this.panel13 = new System.Windows.Forms.Panel();
             this.txtDurum = new System.Windows.Forms.TextBox();
             this.txtOrtalama = new System.Windows.Forms.TextBox();
@@ -90,6 +91,7 @@ namespace OgrenciNot
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -104,12 +106,24 @@ namespace OgrenciNot
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1567, 103);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1429, 32);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(46, 45);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label1
             // 
@@ -143,13 +157,12 @@ namespace OgrenciNot
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Controls.Add(this.cmbOgrKulup);
             this.panel3.Controls.Add(this.panel12);
             this.panel3.Controls.Add(this.btnListele);
             this.panel3.Controls.Add(this.btnGuncelle);
-            this.panel3.Controls.Add(this.btnSil);
             this.panel3.Controls.Add(this.btnKaydet);
             this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.txtOgrKulup);
             this.panel3.Controls.Add(this.txtOgrFotograf);
             this.panel3.Controls.Add(this.txtOgrSoyad);
             this.panel3.Controls.Add(this.txtOgrAd);
@@ -164,6 +177,15 @@ namespace OgrenciNot
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(500, 362);
             this.panel3.TabIndex = 2;
+            // 
+            // cmbOgrKulup
+            // 
+            this.cmbOgrKulup.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cmbOgrKulup.FormattingEnabled = true;
+            this.cmbOgrKulup.Location = new System.Drawing.Point(182, 237);
+            this.cmbOgrKulup.Name = "cmbOgrKulup";
+            this.cmbOgrKulup.Size = new System.Drawing.Size(217, 34);
+            this.cmbOgrKulup.TabIndex = 20;
             // 
             // panel12
             // 
@@ -180,11 +202,12 @@ namespace OgrenciNot
             this.btnListele.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnListele.FlatAppearance.BorderSize = 0;
             this.btnListele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListele.Location = new System.Drawing.Point(349, 291);
+            this.btnListele.Location = new System.Drawing.Point(315, 289);
             this.btnListele.Name = "btnListele";
             this.btnListele.Size = new System.Drawing.Size(50, 50);
             this.btnListele.TabIndex = 17;
             this.btnListele.UseVisualStyleBackColor = false;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // btnGuncelle
             // 
@@ -193,24 +216,12 @@ namespace OgrenciNot
             this.btnGuncelle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnGuncelle.FlatAppearance.BorderSize = 0;
             this.btnGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuncelle.Location = new System.Drawing.Point(293, 291);
+            this.btnGuncelle.Location = new System.Drawing.Point(259, 289);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(50, 50);
             this.btnGuncelle.TabIndex = 16;
             this.btnGuncelle.UseVisualStyleBackColor = false;
-            // 
-            // btnSil
-            // 
-            this.btnSil.BackColor = System.Drawing.Color.Red;
-            this.btnSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSil.BackgroundImage")));
-            this.btnSil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnSil.FlatAppearance.BorderSize = 0;
-            this.btnSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSil.Location = new System.Drawing.Point(237, 291);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(50, 50);
-            this.btnSil.TabIndex = 15;
-            this.btnSil.UseVisualStyleBackColor = false;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnKaydet
             // 
@@ -219,11 +230,12 @@ namespace OgrenciNot
             this.btnKaydet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnKaydet.FlatAppearance.BorderSize = 0;
             this.btnKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKaydet.Location = new System.Drawing.Point(181, 291);
+            this.btnKaydet.Location = new System.Drawing.Point(203, 289);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(50, 50);
             this.btnKaydet.TabIndex = 14;
             this.btnKaydet.UseVisualStyleBackColor = false;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // panel5
             // 
@@ -244,14 +256,6 @@ namespace OgrenciNot
             this.label7.Size = new System.Drawing.Size(235, 26);
             this.label7.TabIndex = 14;
             this.label7.Text = "ÖĞRENCİ BİLGİLERİ";
-            // 
-            // txtOgrKulup
-            // 
-            this.txtOgrKulup.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtOgrKulup.Location = new System.Drawing.Point(182, 237);
-            this.txtOgrKulup.Name = "txtOgrKulup";
-            this.txtOgrKulup.Size = new System.Drawing.Size(217, 34);
-            this.txtOgrKulup.TabIndex = 13;
             // 
             // txtOgrFotograf
             // 
@@ -351,6 +355,7 @@ namespace OgrenciNot
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.LightGray;
+            this.panel6.Controls.Add(this.btnNotHesapla);
             this.panel6.Controls.Add(this.panel13);
             this.panel6.Controls.Add(this.txtDurum);
             this.panel6.Controls.Add(this.txtOrtalama);
@@ -375,6 +380,20 @@ namespace OgrenciNot
             this.panel6.Size = new System.Drawing.Size(500, 362);
             this.panel6.TabIndex = 18;
             // 
+            // btnNotHesapla
+            // 
+            this.btnNotHesapla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnNotHesapla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNotHesapla.BackgroundImage")));
+            this.btnNotHesapla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnNotHesapla.FlatAppearance.BorderSize = 0;
+            this.btnNotHesapla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotHesapla.Location = new System.Drawing.Point(282, 235);
+            this.btnNotHesapla.Name = "btnNotHesapla";
+            this.btnNotHesapla.Size = new System.Drawing.Size(50, 50);
+            this.btnNotHesapla.TabIndex = 24;
+            this.btnNotHesapla.UseVisualStyleBackColor = false;
+            this.btnNotHesapla.Click += new System.EventHandler(this.btnNotHesapla_Click);
+            // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.White;
@@ -386,23 +405,23 @@ namespace OgrenciNot
             // txtDurum
             // 
             this.txtDurum.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDurum.Location = new System.Drawing.Point(384, 134);
+            this.txtDurum.Location = new System.Drawing.Point(355, 133);
             this.txtDurum.Name = "txtDurum";
-            this.txtDurum.Size = new System.Drawing.Size(52, 34);
+            this.txtDurum.Size = new System.Drawing.Size(99, 34);
             this.txtDurum.TabIndex = 23;
             // 
             // txtOrtalama
             // 
             this.txtOrtalama.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtOrtalama.Location = new System.Drawing.Point(384, 94);
+            this.txtOrtalama.Location = new System.Drawing.Point(355, 93);
             this.txtOrtalama.Name = "txtOrtalama";
-            this.txtOrtalama.Size = new System.Drawing.Size(52, 34);
+            this.txtOrtalama.Size = new System.Drawing.Size(99, 34);
             this.txtOrtalama.TabIndex = 22;
             // 
             // txtProje
             // 
             this.txtProje.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtProje.Location = new System.Drawing.Point(156, 254);
+            this.txtProje.Location = new System.Drawing.Point(140, 253);
             this.txtProje.Name = "txtProje";
             this.txtProje.Size = new System.Drawing.Size(52, 34);
             this.txtProje.TabIndex = 21;
@@ -412,7 +431,7 @@ namespace OgrenciNot
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(279, 137);
+            this.label9.Location = new System.Drawing.Point(250, 136);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(99, 26);
             this.label9.TabIndex = 20;
@@ -423,7 +442,7 @@ namespace OgrenciNot
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(242, 97);
+            this.label14.Location = new System.Drawing.Point(213, 96);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(136, 26);
             this.label14.TabIndex = 19;
@@ -434,7 +453,7 @@ namespace OgrenciNot
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label15.Location = new System.Drawing.Point(61, 262);
+            this.label15.Location = new System.Drawing.Point(45, 261);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(89, 26);
             this.label15.TabIndex = 18;
@@ -447,11 +466,12 @@ namespace OgrenciNot
             this.btnNotListele.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnNotListele.FlatAppearance.BorderSize = 0;
             this.btnNotListele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotListele.Location = new System.Drawing.Point(384, 238);
+            this.btnNotListele.Location = new System.Drawing.Point(394, 235);
             this.btnNotListele.Name = "btnNotListele";
             this.btnNotListele.Size = new System.Drawing.Size(50, 50);
             this.btnNotListele.TabIndex = 17;
             this.btnNotListele.UseVisualStyleBackColor = false;
+            this.btnNotListele.Click += new System.EventHandler(this.btnNotListele_Click);
             // 
             // btnNotGuncelle
             // 
@@ -460,11 +480,12 @@ namespace OgrenciNot
             this.btnNotGuncelle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnNotGuncelle.FlatAppearance.BorderSize = 0;
             this.btnNotGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotGuncelle.Location = new System.Drawing.Point(318, 238);
+            this.btnNotGuncelle.Location = new System.Drawing.Point(338, 235);
             this.btnNotGuncelle.Name = "btnNotGuncelle";
             this.btnNotGuncelle.Size = new System.Drawing.Size(50, 50);
             this.btnNotGuncelle.TabIndex = 16;
             this.btnNotGuncelle.UseVisualStyleBackColor = false;
+            this.btnNotGuncelle.Click += new System.EventHandler(this.btnNotGuncelle_Click);
             // 
             // panel7
             // 
@@ -489,7 +510,7 @@ namespace OgrenciNot
             // txtSınav3
             // 
             this.txtSınav3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSınav3.Location = new System.Drawing.Point(156, 214);
+            this.txtSınav3.Location = new System.Drawing.Point(140, 213);
             this.txtSınav3.Name = "txtSınav3";
             this.txtSınav3.Size = new System.Drawing.Size(52, 34);
             this.txtSınav3.TabIndex = 12;
@@ -497,7 +518,7 @@ namespace OgrenciNot
             // txtSınav2
             // 
             this.txtSınav2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSınav2.Location = new System.Drawing.Point(156, 174);
+            this.txtSınav2.Location = new System.Drawing.Point(140, 173);
             this.txtSınav2.Name = "txtSınav2";
             this.txtSınav2.Size = new System.Drawing.Size(52, 34);
             this.txtSınav2.TabIndex = 11;
@@ -505,7 +526,7 @@ namespace OgrenciNot
             // txtSınav1
             // 
             this.txtSınav1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSınav1.Location = new System.Drawing.Point(156, 134);
+            this.txtSınav1.Location = new System.Drawing.Point(140, 133);
             this.txtSınav1.Name = "txtSınav1";
             this.txtSınav1.Size = new System.Drawing.Size(52, 34);
             this.txtSınav1.TabIndex = 10;
@@ -513,7 +534,7 @@ namespace OgrenciNot
             // txtNotId
             // 
             this.txtNotId.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNotId.Location = new System.Drawing.Point(156, 94);
+            this.txtNotId.Location = new System.Drawing.Point(140, 93);
             this.txtNotId.Name = "txtNotId";
             this.txtNotId.Size = new System.Drawing.Size(52, 34);
             this.txtNotId.TabIndex = 9;
@@ -523,7 +544,7 @@ namespace OgrenciNot
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(53, 222);
+            this.label10.Location = new System.Drawing.Point(37, 221);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(97, 26);
             this.label10.TabIndex = 7;
@@ -534,7 +555,7 @@ namespace OgrenciNot
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(53, 182);
+            this.label11.Location = new System.Drawing.Point(37, 181);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(97, 26);
             this.label11.TabIndex = 6;
@@ -545,7 +566,7 @@ namespace OgrenciNot
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(53, 142);
+            this.label12.Location = new System.Drawing.Point(37, 141);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(97, 26);
             this.label12.TabIndex = 5;
@@ -556,7 +577,7 @@ namespace OgrenciNot
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(115, 102);
+            this.label13.Location = new System.Drawing.Point(99, 101);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(35, 26);
             this.label13.TabIndex = 4;
@@ -600,6 +621,7 @@ namespace OgrenciNot
             this.btnKulupListele.Size = new System.Drawing.Size(50, 50);
             this.btnKulupListele.TabIndex = 17;
             this.btnKulupListele.UseVisualStyleBackColor = false;
+            this.btnKulupListele.Click += new System.EventHandler(this.btnKulupListele_Click);
             // 
             // btnKulupGuncelle
             // 
@@ -613,6 +635,7 @@ namespace OgrenciNot
             this.btnKulupGuncelle.Size = new System.Drawing.Size(50, 50);
             this.btnKulupGuncelle.TabIndex = 16;
             this.btnKulupGuncelle.UseVisualStyleBackColor = false;
+            this.btnKulupGuncelle.Click += new System.EventHandler(this.btnKulupGuncelle_Click);
             // 
             // btnKulupSil
             // 
@@ -626,6 +649,7 @@ namespace OgrenciNot
             this.btnKulupSil.Size = new System.Drawing.Size(50, 50);
             this.btnKulupSil.TabIndex = 15;
             this.btnKulupSil.UseVisualStyleBackColor = false;
+            this.btnKulupSil.Click += new System.EventHandler(this.btnKulupSil_Click);
             // 
             // btnKulupKaydet
             // 
@@ -639,6 +663,7 @@ namespace OgrenciNot
             this.btnKulupKaydet.Size = new System.Drawing.Size(50, 50);
             this.btnKulupKaydet.TabIndex = 14;
             this.btnKulupKaydet.UseVisualStyleBackColor = false;
+            this.btnKulupKaydet.Click += new System.EventHandler(this.btnKulupKaydet_Click);
             // 
             // panel10
             // 
@@ -716,6 +741,7 @@ namespace OgrenciNot
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -724,10 +750,11 @@ namespace OgrenciNot
             this.dataGridView1.RowTemplate.Height = 29;
             this.dataGridView1.Size = new System.Drawing.Size(1480, 331);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // panel15
             // 
-            this.panel15.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel15.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel15.Location = new System.Drawing.Point(-2, 862);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(1507, 39);
@@ -754,6 +781,7 @@ namespace OgrenciNot
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -784,7 +812,6 @@ namespace OgrenciNot
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtOgrKulup;
         private System.Windows.Forms.TextBox txtOgrFotograf;
         private System.Windows.Forms.TextBox txtOgrSoyad;
         private System.Windows.Forms.TextBox txtOgrAd;
@@ -795,7 +822,6 @@ namespace OgrenciNot
         private System.Windows.Forms.Label label3;
         private roundButton btnListele;
         private roundButton btnGuncelle;
-        private roundButton btnSil;
         private roundButton btnKaydet;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txtDurum;
@@ -834,6 +860,9 @@ namespace OgrenciNot
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.ComboBox cmbOgrKulup;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private roundButton btnNotHesapla;
         //private roundButton btnOgrKaydet;
     }
 }

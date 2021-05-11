@@ -1,0 +1,7 @@
+D:\vs Projeleri\OgrenciNot\OgrenciNot\obj\Debug\net4.5-windows\OgrenciNot.csprojAssemblyReference.cache
+D:\vs Projeleri\OgrenciNot\OgrenciNot\obj\Debug\net4.5-windows\OgrenciNot.Form1.resources
+D:\vs Projeleri\OgrenciNot\OgrenciNot\obj\Debug\net4.5-windows\OgrenciNot.Properties.Resources.resources
+D:\vs Projeleri\OgrenciNot\OgrenciNot\obj\Debug\net4.5-windows\OgrenciNot.csproj.GenerateResource.cache
+D:\vs Projeleri\OgrenciNot\OgrenciNot\obj\Debug\net4.5-windows\OgrenciNot.AssemblyInfoInputs.cache
+D:\vs Projeleri\OgrenciNot\OgrenciNot\obj\Debug\net4.5-windows\OgrenciNot.AssemblyInfo.cs
+D:\vs Projeleri\OgrenciNot\OgrenciNot\obj\Debug\net4.5-windows\OgrenciNot.csproj.CoreCompileInputs.cache

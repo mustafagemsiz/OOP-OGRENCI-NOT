@@ -11,7 +11,7 @@ namespace BUSINESSLOGICLAYER
     {
         public static bool GUNCELLE(ENTITYNOT deger)
         {
-            if(deger.OGRID!=0&&deger.OGRID>0&&deger.OGRID<=100&&deger.SINAV1!=0&&deger.SINAV1>0&&deger.SINAV1<=100 && deger.SINAV2 != 0 && deger.SINAV2 > 0 && deger.SINAV2 <= 100 && deger.SINAV3 != 0 && deger.SINAV3 > 0 && deger.SINAV3 <= 100 && deger.PROJE != 0 && deger.PROJE > 0 && deger.PROJE <= 100 && deger.ORTALAMA != 0 && deger.ORTALAMA > 0 && deger.ORTALAMA <= 100)
+            if(deger.OGRID>0&&deger.OGRID<=100&&deger.SINAV1>0&&deger.SINAV1<=100  && deger.SINAV2 > 0 && deger.SINAV2 <= 100 &&  deger.SINAV3 > 0 && deger.SINAV3 <= 100 && deger.PROJE > 0 && deger.PROJE <= 100 &&  deger.ORTALAMA > 0 && deger.ORTALAMA <= 100)
             {
                 return FACADENOT.GUNCELLE(deger);
             }

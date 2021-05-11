@@ -14,16 +14,17 @@ namespace BUSINESSLOGICLAYER
     {
         public static int EKLE(ENTITYOGRENCI deger)
         {
-            if(deger.AD!=null && deger.SOYAD!=null&& deger.FOTOGRAF != null && deger.KULUPID != 0 && deger.KULUPID > 0)
+            if(deger.AD.Length>0 && deger.SOYAD.Length > 0 &&  deger.FOTOGRAF.Length>0 && deger.KULUPID != 0 && deger.KULUPID > 0)
             {
                 return FACADEOGRENCI.EKLE(deger);
             }
             return -1;
+            
         }
         
         public static bool GUNCELLE(ENTITYOGRENCI deger)
         {
-            if (deger.AD != null && deger.SOYAD != null && deger.FOTOGRAF != null && deger.KULUPID != 0 && deger.KULUPID > 0 && deger.ID != 0)
+            if (deger.AD.Length > 0 && deger.SOYAD.Length > 0 && deger.FOTOGRAF.Length > 0 && deger.FOTOGRAF.Length > 0 && deger.KULUPID != 0 && deger.KULUPID > 0 && deger.ID!=0)
             {
                 return FACADEOGRENCI.GUNCELLE(deger);
             }
